@@ -10,9 +10,9 @@ RUN apt-get update && apt-get install -y \
     gnupg \
     unzip \
     curl \
+    ca-certificates \
     # Chrome dependencies
     libnss3 \
-    libgconf-2-4 \
     libfontconfig1 \
     libxss1 \
     libappindicator3-1 \
@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     libatk1.0-0 \
     libcups2 \
     libdbus-1-3 \
-    libgdk-pixbuf2.0-0 \
+    libgdk-pixbuf-2.0-0 \
     libnspr4 \
     libx11-xcb1 \
     libxcomposite1 \
