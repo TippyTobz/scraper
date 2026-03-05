@@ -1,0 +1,94 @@
+2026-03-05T01:13:54.967017995Z [inf]  Starting Container
+2026-03-05T01:13:55.119054361Z [err]  INFO:     Started server process [1]
+2026-03-05T01:13:55.119058368Z [err]  INFO:     Waiting for application startup.
+2026-03-05T01:13:55.119062557Z [err]  INFO:     Application startup complete.
+2026-03-05T01:13:55.119066320Z [err]  INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-05T01:14:15.188775023Z [err]  2026-03-05 01:14:11,770 - WDM - INFO - ====== WebDriver manager ======
+2026-03-05T01:14:15.188781210Z [err]  2026-03-05 01:14:11,952 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-03-05T01:14:15.188786955Z [err]  2026-03-05 01:14:11,989 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-03-05T01:14:15.188792455Z [err]  2026-03-05 01:14:12,048 - WDM - INFO - There is no [linux64] chromedriver "145.0.7632.117" for browser google-chrome "145.0.7632" in cache
+2026-03-05T01:14:15.188801169Z [err]  2026-03-05 01:14:12,048 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-03-05T01:14:15.188805853Z [err]  2026-03-05 01:14:12,142 - WDM - INFO - WebDriver version 145.0.7632.117 selected
+2026-03-05T01:14:15.188811446Z [err]  2026-03-05 01:14:12,148 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/145.0.7632.117/linux64/chromedriver-linux64.zip
+2026-03-05T01:14:15.188817058Z [err]  2026-03-05 01:14:12,149 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/145.0.7632.117/linux64/chromedriver-linux64.zip
+2026-03-05T01:14:15.188822837Z [err]  2026-03-05 01:14:12,171 - WDM - INFO - Driver downloading response is 200
+2026-03-05T01:14:15.188827795Z [err]  2026-03-05 01:14:12,219 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-03-05T01:14:15.188832722Z [err]  2026-03-05 01:14:12,452 - WDM - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/145.0.7632.117]
+2026-03-05T01:14:15.188840446Z [err]  2026-03-05 01:14:13,024 - root - ERROR - Scraping failed: Message: invalid session id: session deleted as the browser has closed the connection
+2026-03-05T01:14:15.188853913Z [err]  from disconnected: Unable to receive message from renderer
+2026-03-05T01:14:15.188860870Z [err]    (Session info: chrome=145.0.7632.159)
+2026-03-05T01:14:16.176100700Z [err]  #5 0x556a59bcad14 <unknown>
+2026-03-05T01:14:16.176156040Z [err]  Stacktrace:
+2026-03-05T01:14:16.176163755Z [err]  #0 0x556a5a1b6b6a <unknown>
+2026-03-05T01:14:16.176179349Z [err]  #3 0x556a59bae731 <unknown>
+2026-03-05T01:14:16.176185676Z [err]  #4 0x556a59baf0bf <unknown>
+2026-03-05T01:14:16.176192798Z [err]  #1 0x556a59bc9a32 <unknown>
+2026-03-05T01:14:16.176198120Z [err]  #2 0x556a59bb1007 <unknown>
+2026-03-05T01:14:16.177626062Z [err]  #6 0x556a59b9be7b <unknown>
+2026-03-05T01:14:16.177638035Z [err]  #7 0x556a59b9b88e <unknown>
+2026-03-05T01:14:16.177644015Z [err]  #19 0x556a5a1b51a3 <unknown>
+2026-03-05T01:14:16.177647998Z [err]  #8 0x556a59c53eb6 <unknown>
+2026-03-05T01:14:16.177658005Z [err]  #9 0x556a59c5331c <unknown>
+2026-03-05T01:14:16.177662554Z [err]  #20 0x7fa3d66dcb7b <unknown>
+2026-03-05T01:14:16.177665664Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-03-05T01:14:16.177667829Z [err]  #10 0x556a59c10c0f <unknown>
+2026-03-05T01:14:16.177679048Z [err]  Traceback (most recent call last):
+2026-03-05T01:14:16.177679301Z [err]    File "/app/scraper.py", line 25, in search
+2026-03-05T01:14:16.177679322Z [err]  #11 0x556a59c119d1 <unknown>
+2026-03-05T01:14:16.177688114Z [err]  #12 0x556a5a17b6b9 <unknown>
+2026-03-05T01:14:16.177689179Z [err]      return await asyncio.get_event_loop().run_in_executor(
+2026-03-05T01:14:16.177690881Z [err]    File "/app/main.py", line 45, in scrape_jobs
+2026-03-05T01:14:16.177697025Z [err]  #13 0x556a5a17e5c1 <unknown>
+2026-03-05T01:14:16.177701091Z [err]      jobs = await provider.search(role=role, limit=limit)
+2026-03-05T01:14:16.177704899Z [err]  #14 0x556a5a167e29 <unknown>
+2026-03-05T01:14:16.177711438Z [err]  #15 0x556a5a17f17e <unknown>
+2026-03-05T01:14:16.177717305Z [err]  #16 0x556a5a14e4b0 <unknown>
+2026-03-05T01:14:16.177723088Z [err]  #17 0x556a5a1a3578 <unknown>
+2026-03-05T01:14:16.177730731Z [err]  #18 0x556a5a1a374b <unknown>
+2026-03-05T01:14:16.179017111Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-03-05T01:14:16.179025447Z [err]    File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+2026-03-05T01:14:16.179031244Z [err]      result = self.fn(*self.args, **self.kwargs)
+2026-03-05T01:14:16.179039863Z [err]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-03-05T01:14:16.179046579Z [err]    File "/app/scraper.py", line 61, in _scrape
+2026-03-05T01:14:16.179053510Z [err]      browser = webdriver.Chrome(
+2026-03-05T01:14:16.179060678Z [err]                ^^^^^^^^^^^^^^^^^
+2026-03-05T01:14:16.179067912Z [err]    File "/usr/local/lib/python3.12/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+2026-03-05T01:14:16.179073983Z [err]      super().__init__(
+2026-03-05T01:14:16.179080547Z [err]    File "/usr/local/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+2026-03-05T01:14:16.179103496Z [err]      super().__init__(command_executor=executor, options=options)
+2026-03-05T01:14:16.179110692Z [err]    File "/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 238, in __init__
+2026-03-05T01:14:16.179117708Z [err]      self.start_session(capabilities)
+2026-03-05T01:14:16.179124780Z [err]    File "/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 325, in start_session
+2026-03-05T01:14:16.179160229Z [err]      response = self.execute(Command.NEW_SESSION, caps)["value"]
+2026-03-05T01:14:16.179167780Z [err]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-03-05T01:14:16.179174264Z [err]    File "/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+2026-03-05T01:14:16.179181197Z [err]      self.error_handler.check_response(response)
+2026-03-05T01:14:16.179190933Z [err]    File "/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+2026-03-05T01:14:16.181399822Z [err]      raise exception_class(message, screen, stacktrace)
+2026-03-05T01:14:16.181406383Z [err]  selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+2026-03-05T01:14:16.181413038Z [err]  from disconnected: Unable to receive message from renderer
+2026-03-05T01:14:16.181419557Z [err]    (Session info: chrome=145.0.7632.159)
+2026-03-05T01:14:16.181426468Z [err]  Stacktrace:
+2026-03-05T01:14:16.181433035Z [err]  #0 0x556a5a1b6b6a <unknown>
+2026-03-05T01:14:16.181439381Z [err]  #1 0x556a59bc9a32 <unknown>
+2026-03-05T01:14:16.181446293Z [err]  #2 0x556a59bb1007 <unknown>
+2026-03-05T01:14:16.181452796Z [err]  #3 0x556a59bae731 <unknown>
+2026-03-05T01:14:16.181459844Z [err]  #4 0x556a59baf0bf <unknown>
+2026-03-05T01:14:16.181466431Z [err]  #5 0x556a59bcad14 <unknown>
+2026-03-05T01:14:16.181473113Z [err]  #6 0x556a59b9be7b <unknown>
+2026-03-05T01:14:16.181479429Z [err]  #7 0x556a59b9b88e <unknown>
+2026-03-05T01:14:16.181486503Z [err]  #8 0x556a59c53eb6 <unknown>
+2026-03-05T01:14:16.181493136Z [err]  #9 0x556a59c5331c <unknown>
+2026-03-05T01:14:16.181499614Z [err]  #10 0x556a59c10c0f <unknown>
+2026-03-05T01:14:16.181505917Z [err]  #11 0x556a59c119d1 <unknown>
+2026-03-05T01:14:16.181512346Z [err]  #12 0x556a5a17b6b9 <unknown>
+2026-03-05T01:14:16.181518069Z [err]  #13 0x556a5a17e5c1 <unknown>
+2026-03-05T01:14:16.181524019Z [err]  #14 0x556a5a167e29 <unknown>
+2026-03-05T01:14:16.181530608Z [err]  #15 0x556a5a17f17e <unknown>
+2026-03-05T01:14:16.181537224Z [err]  #16 0x556a5a14e4b0 <unknown>
+2026-03-05T01:14:16.181543521Z [err]  #17 0x556a5a1a3578 <unknown>
+2026-03-05T01:14:16.181550184Z [err]  #18 0x556a5a1a374b <unknown>
+2026-03-05T01:14:16.181555905Z [err]  #19 0x556a5a1b51a3 <unknown>
+2026-03-05T01:14:16.181565132Z [err]  #20 0x7fa3d66dcb7b <unknown>
+2026-03-05T01:14:16.182719949Z [err]  
+2026-03-05T01:14:16.182726473Z [inf]  INFO:     100.64.0.2:62532 - "GET /scrape?role=Software%20Engineer&limit=5 HTTP/1.1" 200 OK

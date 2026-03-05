@@ -46,17 +46,23 @@ class HiringCafeProvider(JobProvider):
         options.add_argument("--disable-software-rasterizer")
         options.add_argument("--disable-extensions")
         options.add_argument("--disable-setuid-sandbox")
-        options.add_argument("--single-process")
+        # Removed --single-process (causes immediate crashes)
         options.add_argument("--disable-background-networking")
         options.add_argument("--disable-default-apps")
         options.add_argument("--disable-sync")
+        options.add_argument("--disable-translate")
         options.add_argument("--metrics-recording-only")
         options.add_argument("--mute-audio")
         options.add_argument("--no-first-run")
         options.add_argument("--safebrowsing-disable-auto-update")
-        options.add_argument("--ignore-certificate-errors")
-        options.add_argument("--ignore-ssl-errors")
-        options.add_argument("--ignore-certificate-errors-spki-list")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        # Memory optimizations for Railway
+        options.add_argument("--disable-renderer-backgrounding")
+        options.add_argument("--disable-background-timer-throttling")
+        options.add_argument("--disable-backgrounding-occluded-windows")
+        options.add_argument("--disable-ipc-flooding-protection")
+        # Use fewer renderer processes
+        options.add_argument("--renderer-process-limit=1")
 
         browser = webdriver.Chrome(
             service=Service(ChromeDriverManager().install()),
